@@ -518,7 +518,7 @@
     body {
         position: relative;
     }
-    body::after {
+    .article-page::after {
         position: absolute;
         content: url('./src/article-svg-round-big.svg');
         top: 40%;

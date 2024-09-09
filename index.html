@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Сервис по подбору психолога">
     <link rel="stylesheet" href="style.css">
-    <link rel="normilize" href="normilize.css">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" as="style">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <title>Блог</title>
 </head>
 
@@ -16,32 +16,34 @@
     <header class="header container">
         <div class="header__list">
             <div class="logo">
-                <a href="#">
+                <a href="/" aria-label="Homepage">
                     <img src="./src/logo.svg" alt="логотип">
                 </a>
             </div>
-            <nav class="header__list_nav">
+            <nav class="header__list_nav" aria-label="Main navigation">
                 <ul class="header__list_items">
-                    <li>О нас</li>
-                    <li>Тарифы</li>
-                    <li>Для бизнеса</li>
-                    <li>Психологам</li>
-                    <li>Сертификаты</li>
-                    <li>Материалы</li>
-                    <li>FAQ</li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Тарифы</a></li>
+                    <li><a href="#">Для бизнеса</a></li>
+                    <li><a href="#">Психологам</a></li>
+                    <li><a href="#">Сертификаты</a></li>
+                    <li><a href="#">Материалы</a></li>
+                    <li><a href="#">FAQ</a></li>
                 </ul>
             </nav>
-            <button class="choose-btn">
-                Подобрать психолога
-            </button>
+            <button type="button" aria-label="Подобрать психолога" class="choose-btn">Подобрать психолога</button>
             <button class="burger-btn">
                 <img src="./src/burger-btn.svg" alt="бургер-кнопка">    
             </button>
         </div>
-        <span class="breadcrumbs">
-            <a class="breadcrumbs_link" href="#">Главная<img src="./src/breadcrumb-arrow.svg" alt="стрелочка"></a>
-            Блог</span>
+        <nav aria-label="Хлебные крошки">
+            <span class="breadcrumbs">
+                <a class="breadcrumbs_link" href="#">Главная<img src="./src/breadcrumb-arrow.svg" alt="стрелочка"></a>
+                Блог
+            </span>
+        </nav>
     </header>
+
     <main class="main container first-page">
         <h1>Блог</h1>
         <div class="carousel">
@@ -63,11 +65,11 @@
             <div class="main-content__two-blocks">
                 <div class="card">
                     <div class="card__img">
-                        <img class="card__main-img" src="./src/card-img-1.png" alt="куриные-яйца">
+                        <img class="card__main-img" src="./src/card-img-1.png" alt="куриные-яйца-с-разными-эмоциями">
                         <div class="card__additional">
                             <span class="carousel__item">
                                 <img src="./src/unicorn.svg" alt="unicorn"> Самооценка и самопринятие</span>
-                            <span class="carousel__item"><img src="./src/unicorn.svg" alt="unicorn">Self</span>
+                            <span class="carousel__item"><img src="./src/unicorn.svg" alt="эмоджи-единорога">Self</span>
                         </div>
                     </div>
                     <div class="card__info">
@@ -81,7 +83,7 @@
                     <div class="card__img">
                         <img class="card__main-img" src="./src/card-img-2.png" alt="пробежка-на-природе">
                         <div class="card__additional">
-                            <span class="carousel__item"><img src="./src/unicorn.svg" alt="unicorn">Self</span>
+                            <span class="carousel__item"><img src="./src/unicorn.svg" alt="эмоджи-единорога">Self</span>
                         </div>
                     </div>
                     <div class="card__info">
@@ -98,9 +100,9 @@
                         <img class="card__main-img" src="./src/card-img-3.png" alt="девушка">
                         <div class="card__additional">
                             <span class="carousel__item">
-                                <img src="./src/unicorn.svg" alt="unicorn"> Самооценка и самопринятие</span>
+                                <img src="./src/unicorn.svg" alt="эмоджи-единорога"> Самооценка и самопринятие</span>
                             <span class="carousel__item">
-                                <img src="./src/unicorn.svg" alt="unicorn">Психология питания</span>
+                                <img src="./src/unicorn.svg" alt="эмоджи-единорога">Психология питания</span>
                         </div>
                     </div>
                     <div class="card__info">
@@ -115,7 +117,7 @@
                         <div class="card__img">
                             <img class="card__main-img" src="./src/card-img-4.png" alt="девушка-в-бассейне">
                             <div class="card__additional">
-                                <span class="carousel__item"><img src="./src/unicorn.svg" alt="unicorn">Self</span>
+                                <span class="carousel__item"><img src="./src/unicorn.svg" alt="эмоджи-единорога">Self</span>
                             </div>
                         </div>
                         <div class="card__info">
@@ -131,7 +133,7 @@
                         <img class="card__main-img" src="./src/card-img-5.png" alt="злой-эмоджи">
                         <div class="card__additional">
                             <span class="carousel__item">
-                                <img src="./src/unicorn.svg" alt="unicorn">Self</span>
+                                <img src="./src/unicorn.svg" alt="эмоджи-единорога">Self</span>
                         </div>
                     </div>
                     <div class="card__info">
@@ -146,7 +148,7 @@
                         <img class="card__main-img" src="./src/card-img-6.png" alt="взрослая-женщина-работает-за-ноутбуком">
                         <div class="card__additional">
                             <span class="carousel__item">
-                                <img src="./src/unicorn.svg" alt="unicorn">Self</span>
+                                <img src="./src/unicorn.svg" alt="эмоджи-единорога">Self</span>
                         </div>
                     </div>
                     <div class="card__info">
@@ -160,7 +162,7 @@
                     <div class="card__img">
                         <img class="card__main-img" src="./src/card-img-7.png" alt="взрослая-женщина-общается-по-видео">
                         <div class="card__additional">
-                            <span class="carousel__item"><img src="./src/unicorn.svg" alt="unicorn">Self</span>
+                            <span class="carousel__item"><img src="./src/unicorn.svg" alt="эмоджи-единорога">Self</span>
                         </div>
                     </div>
                     <div class="card__info">
@@ -174,7 +176,7 @@
                     <div class="card__img">
                         <img class="card__main-img" src="./src/card-img-8.png" alt="люди">
                         <div class="card__additional">
-                            <span class="carousel__item"><img src="./src/unicorn.svg" alt="unicorn">Self</span>
+                            <span class="carousel__item"><img src="./src/unicorn.svg" alt="эмоджи-единорога">Self</span>
                         </div>
                     </div>
                     <div class="card__info">
@@ -227,7 +229,7 @@
         <div class="footer__copyright container">
             <span>©Youtalk, 2018 – 2022</span>
             <a href="#"><span>Юридические документы</span></a>
-            <a href="#">Способы оплаты</span></a>
+            <a href="#"><span>Способы оплаты</span></a>
         </div>
     </footer>
 

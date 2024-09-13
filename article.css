@@ -1,3 +1,7 @@
+.article-page {
+    margin-top: 16px !important;
+}
+
 .article-page img {
     width: 100%;
     height: 100%;
@@ -8,7 +12,6 @@
     font-size: 24px;
     line-height: 32px;
 }
-
 
 /* MAIN | ARTICLE */
 
@@ -61,15 +64,14 @@
 
 .article__items,
 .quote-block_p {
-    font-size: 16px;
     line-height: 24px;
+    font-size: 16px;
 }
 
 .article__items-b {
     font-weight: bold;
 }
 
-.article__items-b,
 .article__items-h3 {
     font-size: 18px;
     line-height: 26px;
@@ -82,18 +84,27 @@
 
 .article__item {
     padding-bottom: 8px;
-    position: relative;
     font-weight: 400;
-    padding-left: 32px;
 }
 
-.article__item::before {
-    position: absolute;
-    content: '.';
-    font-size: 52px;
-    color: #03B2A5;
-    top: -17px;
-    left: 8px;
+.article__items-b .article__item,
+.third-article .article__item,
+.last-article .article__item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.third-article .article__item ,
+.last-article .article__item{
+    align-items: start;
+}
+
+.article__items-b .article__item img,
+.third-article .article__item img,
+.last-article .article__item img{
+    width: 24px;
+    height: 24px;
 }
 
 .article__item a,
@@ -117,6 +128,7 @@
 
 .article-with-quote {
     margin-bottom: 16px;
+    gap: 8px;
 }
 
 .article__items-p {
@@ -127,7 +139,8 @@
 }
 
 .article__items-q {
-    padding: 16px;
+    margin-top: 24px;
+    padding: 26px 16px 16px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -139,8 +152,10 @@
 .article__items-q::before {
     position: absolute;
     content: url('./src/article-icon-quote.svg');
-    width: 100%;
-    height: auto;
+    width: 23px;
+    height: 36px;
+    top: 16px;
+    left: 16px;
 }
 
 .quote-block {
@@ -394,6 +409,9 @@
 }
 
 @media only screen and (min-width: 768px) {
+    .article-page {
+        margin-top: 38px !important;
+    }
     .article-page h1 {
         font-size: 48px;
         line-height: 56px;
